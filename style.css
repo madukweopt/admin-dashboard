@@ -9,3 +9,25 @@ ul, ol {
 .header {
     background-color: #a7f3d0;
 }
+
+.trend-img {
+    width: 30px;
+    height: auto;
+    margin-left: 8px;
+    
+}
+
+.trending, .trend-img {
+    background-color: #a8a29e;
+}
+
+.announcements {
+    background-color: #ffe4e6;
+}
+
+.my-projects {
+    background-color: #64748b;
+}
+.header > [src$='.jpg'] {
+    width: 40px;
+}
