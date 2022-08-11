@@ -1,5 +1,7 @@
 .sidebar {
     background-color: #fda4af;
+    grid-column: 1/2;
+    grid-row: 1/4;
 }
 
 ul, ol {
@@ -8,6 +10,8 @@ ul, ol {
 }
 .header {
     background-color: #a7f3d0;
+    grid-column: 2/4;
+    grid-row: 1/2;
 }
 
 .trend-img {
@@ -27,7 +31,20 @@ ul, ol {
 
 .my-projects {
     background-color: #64748b;
+   
 }
+
+.my-projects {
+    grid-column: 2/3;
+    grid-row: 2/4; 
+}
+
 .header > [src$='.jpg'] {
     width: 40px;
+}
+
+.all-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 200px 400px 400px
 }
