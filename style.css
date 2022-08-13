@@ -6,9 +6,7 @@ html,body {
     background-color: #0c0386;
     grid-column: 1/2;
     grid-row: 1/4;
-    vertical-align: middle;
-    
-    
+    vertical-align: middle;  
 
 }
 
@@ -18,9 +16,12 @@ ul, ol {
 
 }
 .header {
-    background-color: #a7f3d0;
+    background-color: #faf3f3fa;
     grid-column: 2/4;
     grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .trend-img {
@@ -48,7 +49,7 @@ ul, ol {
     grid-row: 2/4; 
 }
 
-.header > [src$='.jpg'] {
+.header > div > [src$='.jpg'] {
     width: 40px;
 }
 
@@ -82,4 +83,62 @@ ol {
     margin-left: 20px;
     margin-top: 10px;
     color: white;
+}
+.header > .first {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    gap: 5px;
+    height: 30px;
+    padding: 20px;
+}
+.header > .second {
+    grid-row: 1/2;
+    grid-column: 2/5;
+    display: flex;
+    height: 30px;
+    padding: 20px;
+    margin-left: 50px;
+    gap: 30px;
+}
+
+.second > div {
+    margin-top: 8px;
+    
+}
+
+.second > img {
+    border-radius: 50%;
+
+}
+#search {
+    flex-grow: 1;
+    border-radius: 10px;
+    background-color: rgba(216, 209, 209, 0.637);
+    border: none;
+}
+.header > .third {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    padding: 20px;
+
+}
+.third > div {
+    grid-column: 2/7;
+}
+
+.fourth {
+    grid-column: 2/5;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    
+}
+button {
+    padding: 5px;
+    width: 6rem;
+    height: 2rem;
+    border-radius: 20%;
 }
