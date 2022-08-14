@@ -1,6 +1,7 @@
 html,body {
     margin: 0;
     padding: 0;
+    font-family: 'Times New Roman', Times, serif;
 }
 .sidebar {
     background-color: #0c0386;
@@ -43,10 +44,16 @@ ul, ol {
     font-size: 12px;
     word-wrap: break-word;
     margin-right: 12px;
+    margin-top: 40px;
 }
 .trending > .trend > img {
     vertical-align: middle;
     margin-right: 12px;
+}
+.trending > p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-style: italic;
 }
 
 
@@ -75,9 +82,10 @@ ul, ol {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    margin-top: 20px;
+    margin-top: 10px;
     gap: 10px;
     margin-left: 20px;
+    box-sizing: border-box;
 }
 #project-header {
     grid-column: 1/2;
@@ -115,8 +123,9 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    gap: 20px;
+    gap: 10px;
     background-color: #c0bfd1;
+    box-sizing: border-box;
 }
 
 .header > div > [src$='.jpg'] {
@@ -215,10 +224,11 @@ button {
 .main {
     padding: 10px;
     background-color: white;
-    margin: 20px;
+    margin: 10px;
     margin-top: 30px;
+    box-sizing: border-box;
 }
-em {
+.announcements > em {
     margin-top: 20px;
 }
     
