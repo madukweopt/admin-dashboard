@@ -329,4 +329,16 @@ button {
         margin-top: 30px;
     }
 }
+
+@media (max-width: 500px) {
+    .all-container {
+        display: block;
+    }
+    .my-projects {
+        display: block;
+    }
+    #search {
+        max-width: 300px;
+    }
+}
     
